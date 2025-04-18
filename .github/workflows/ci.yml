@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16'  # Adjust to your version of Node.js
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -29,18 +29,18 @@ jobs:
 
       # Step 4: Run tests
       - name: Run tests
-        run: npm test  # Adjust this command to match your test setup (e.g., playwright or cypress)
+        run: npm test  # Adjust this command to match your test setup (e.g., "npx playwright test")
 
-      # Step 5: Archive test results as an artifact (using a different strategy)
+      # Step 5: Archive the test results into a compressed tarball or zip
       - name: Archive test results
         run: |
           mkdir -p artifacts
-          mv path/to/your/test-results.xml artifacts/
-          tar -czf artifacts.tar.gz artifacts
+          mv path/to/your/test-results.xml artifacts/  # Move test results to an artifacts folder
+          tar -czf artifacts.tar.gz artifacts  # Create a compressed tarball of the artifacts
 
-      # Step 6: Upload the artifact (custom method)
-      - name: Upload test results artifact
+      # Step 6: Manually upload the archived test results
+      - name: Upload test results artifact manually
         uses: actions/upload-artifact@v3
         with:
           name: test-results
-          path: artifacts.tar.gz
+          path: artifacts.tar.gz  # Upload the tarball containing the results
