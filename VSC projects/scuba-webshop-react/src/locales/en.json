@@ -1,0 +1,136 @@
+{
+  "checkout": {
+  "title": "Checkout",
+  "billingInformation": "Billing Information",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email",
+  "address": "Address",
+  "country": "Country",
+  "selectCountry": "Select Country",
+  "sweden": "Sweden",
+  "usa": "USA",
+  "germany": "Germany",
+  "city": "City",
+  "postalCode": "Postal Code",
+  "paymentInformation": "Payment Information",
+  "nameOnCard": "Name on Card",
+  "cardNumber": "Card Number",
+  "expiryDate": "Expiry Date",
+  "cvv": "CVV",
+  "placeOrder": "Place Order"
+  },
+
+  "login": {
+    "title": "Login",
+    "email": "Email Address",
+    "password": "Password",
+    "button": "Sign In", 
+    "notMember": "Not a member?",
+    "registerHere": "Register here"
+  },
+
+  "signup": {
+    "title": "Sign Up",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "button": "Register",
+    "alreadyMember": "Already a member?",
+    "loginHere": "Login here"
+  }, 
+  
+  "errors": {
+    "emailRequired": "Email is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "passwordRequired": "Password is required.",
+    "passwordValidation": "Password must be at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.",
+    "passwordMismatch": "Passwords do not match.",
+    "firstNameRequired": "First name is required.",
+    "lastNameRequired": "Last name is required.",
+    "addressRequired": "Address is required.",
+    "countryRequired": "Please select a country.",
+    "cityRequired": "City is required.",
+    "invalidPostalCode": "Postal code must be 5 digits.",
+    "cardNameRequired": "Name on card is required.",
+    "invalidCardNumber": "Card number must be 16 digits.",
+    "expiryDateRequired": "Expiry date is required.",
+    "expiryDatePast": "Expiry date cannot be in the past.",
+    "invalidCvv": "CVV must be 3 digits.",
+    "allFieldsRequired": "All fields are required.",
+    "invalidCredentials": "Invalid email or password.",
+    "weakPassword": "Password must be at least 8 characters long and include an uppercase letter, a lowercase letter, a number, and a special character."
+  }, 
+  "placeOrderSuccess": "Your order has been placed successfully!",
+
+  "navbar": {
+    "loggedInAs": "Logged in as",
+    "gear": "Gear",
+    "cart": "Cart",
+    "about": "About",
+    "login": "Login",
+    "logout": "Logout"
+  },
+
+  "cart": {
+    "confirmRemove": "Are you sure you want to remove {{item}} from your Cart?",
+    "title": "Your Cart",
+    "empty": "Your cart is empty.",
+    "added": "has been added to your cart!",
+    "quantityIncreased": "quantity increased!",
+    "addToCart": "Add to Cart",
+    "proceedToCheckout": "Proceed to Checkout",
+    "remove": "Remove from Cart",
+    "clear": "Clear Cart",
+    "totalAmount": "Total Amount"
+    
+  },
+  
+  "welcome": {
+    "title": "Welcome to Deep Dive!",
+    "description": "Explore our high quality scuba gear collection!",
+    "featuredItems": "Featured Items",
+    "browseGear": "Browse our gear"
+  }, 
+
+  "gear": {
+    "title": "Our Gear Collection",
+    "maskSnorkel": "Mask & Snorkel Set",
+    "fullBodyWetsuit": "Full Body Wetsuit",
+    "divingFins": "Diving Fins",
+    "diveComputer": "Dive Computer",
+    "oxygenTank": "Oxygen Tank",
+    "shortyWetsuit": "Shorty Wetsuit",
+    "divingBoots": "Diving Boots",
+    "bcd": "Buoyancy Control Device (BCD)",
+    "gearBag": "Gear Bag",
+    "underwaterCamera": "Underwater Camera",
+    "divingTorch": "Diving Torch",
+    "regulatorSet": "Regulator Set",
+
+      "descriptions": {
+      "maskSnorkel": "High-quality mask and snorkel set for clear underwater vision.",
+      "fullBodyWetsuit": "Durable and flexible wetsuit providing full-body protection.",
+      "divingFins": "Ergonomic diving fins for efficient movement in the water.",
+      "diveComputer": "Advanced dive computer to track depth, time, and decompression.",
+      "oxygenTank": "Reliable oxygen tank for extended underwater exploration.",
+      "shortyWetsuit": "Short-sleeve wetsuit offering comfort and flexibility.",
+      "divingBoots": "Neoprene diving boots for warmth and protection.",
+      "bcd": "Essential buoyancy control device for safe diving.",
+      "gearBag": "Spacious gear bag to store and transport diving equipment.",
+      "underwaterCamera": "High-resolution underwater camera to capture marine life.",
+      "divingTorch": "Powerful diving torch for visibility in dark waters.",
+      "regulatorSet": "Complete regulator set for safe and controlled breathing."
+    }
+  },
+  
+
+  "about": {
+    "title": "About Deep Dive",
+    "description": "Deep Dive is a scuba diving gear web shop built to showcase automated UI testing and localization support. The project is built with React, React Router, i18next (for localization) and Vite, and includes a shopping cart system, a checkout process, and user authentication. While not intended for real transactions, it serves as a portfolio project to demonstrate skills in test automation, frontend development, and localization testing."
+ 
+  }
+
+  
+}
+

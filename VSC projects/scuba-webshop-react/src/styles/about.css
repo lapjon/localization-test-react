@@ -1,0 +1,34 @@
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url("/images/gear/sea-turtle.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: flex-start; /* Align to top */
+    justify-content: center; /* Center horizontally */
+    padding-top: 3rem; /* Adjust this value to move the text box higher */
+}
+
+.about-text-box {
+    background: rgba(0, 0, 0, 0.7); /* Darker background for readability */
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    max-width: 60%; /* Adjust width */
+    font-size: 1.2rem;
+    border-radius: 0; /* Keep it rectangular */
+    position: relative;
+    top: 2rem; /* Moves the box higher up */
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-description {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify; /* Ensures text wraps properly */
+}

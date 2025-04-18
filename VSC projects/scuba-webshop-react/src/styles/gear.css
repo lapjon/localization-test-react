@@ -1,0 +1,61 @@
+.gear-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gear-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .gear-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .gear-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gear-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .gear-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .gear-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .gear-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #274fde;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .gear-item button:hover {
+    background-color: #1a3ab0;
+  }
+
+  .gear-description {
+    font-size: 10px;  /* Adjust as needed */
+    color: #4f4e4e;      /* Optional: You can change the color if desired */
+    margin-top: 5px;  /* Optional: Adjust spacing between description and price */
+  }
+  

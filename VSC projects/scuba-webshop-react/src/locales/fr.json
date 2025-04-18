@@ -1,0 +1,134 @@
+{
+    "checkout": {
+    "title": "Caisse",
+    "billingInformation": "Informations de facturation",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "Email",
+    "address": "Adresse",
+    "country": "Pays",
+    "selectCountry": "Sélectionner un pays",
+    "sweden": "Suède",
+    "usa": "USA",
+    "germany": "Allemagne",
+    "city": "Ville",
+    "postalCode": "Code postal",
+    "paymentInformation": "Informations sur le paiement",
+    "nameOnCard": "Nom sur la carte",
+    "cardNumber": "Numéro de la carte",
+    "expiryDate": "Date d'expiration",
+    "cvv": "CVV",
+    "placeOrder": "Passer commande"
+    },
+  
+    "login": {
+      "title": "Connexion",
+      "email": "Adresse électronique",
+      "password": "Mot de passe",
+      "button": "S'identifier", 
+      "notMember": "Vous n'êtes pas membre ?",
+      "registerHere": "S'inscrire ici"
+    },
+  
+    "signup": {
+      "title": "S'inscrire",
+      "email": "Adresse électronique",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmation du mot de passe",
+      "button": "Registre",
+      "alreadyMember": "Déjà membre ?",
+      "loginHere": "Se connecter ici"
+    }, 
+    
+    "errors": {
+      "emailRequired": "L'adresse électronique est obligatoire.",
+      "invalidEmail": "Veuillez saisir une adresse électronique valide.",
+      "passwordRequired": "Le mot de passe est obligatoire.",
+      "passwordValidation": "Le mot de passe doit comporter au moins 8 caractères et contenir au moins une lettre majuscule, une lettre minuscule et un chiffre",
+      "passwordMismatch": "Les mots de passe ne correspondent pas.",
+      "firstNameRequired": "Le prénom est obligatoire.",
+      "lastNameRequired": "Le nom de famille est obligatoire.",
+      "addressRequired": "L'adresse est obligatoire.",
+      "countryRequired": "Veuillez sélectionner un pays.",
+      "cityRequired": "La ville est obligatoire.",
+      "invalidPostalCode": "Le code postal doit être composé de 5 chiffres.",
+      "cardNameRequired": "Le nom sur la carte est obligatoire.",
+      "invalidCardNumber": "Le numéro de la carte doit être composé de 16 chiffres.",
+      "expiryDateRequired": "La date d'expiration est obligatoire.",
+      "expiryDatePast": "La date d'expiration ne peut pas être dans le passé.",
+      "invalidCvv": "Le CVV doit être composé de 3 chiffres.",
+      "allFieldsRequired": "Tous les champs sont obligatoires.",
+      "invalidCredentials": "E-mail ou mot de passe invalide.",
+      "weakPassword": "Le mot de passe doit comporter au moins 8 caractères et inclure une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial."
+    }, 
+    "placeOrderSuccess": "Votre commande a été passée avec succès !",
+  
+    "navbar": {
+      "loggedInAs": "Connecté en tant que",
+      "gear": "Équipement",
+      "cart": "Panier",
+      "about": "À propos de",
+      "login": "Connexion",
+      "logout": "Déconnexion"
+    },
+  
+    "cart": {
+      "confirmRemove": "Êtes-vous sûr de vouloir supprimer {{item}} de votre panier?",
+      "title": "Votre panier",
+      "empty": "Votre panier est vide",
+      "added": "a été ajouté à votre panier !",
+      "quantityIncreased": "quantité augmentée !",
+      "addToCart": "Ajouter au panier",
+      "proceedToCheckout": "Passer à la caisse",
+      "remove": "Retirer du panier",
+      "clear": "Effacer le panier",
+      "totalAmount": "Montant total"
+      
+    },
+    
+    "welcome": {
+      "title": "Bienvenue à Deep Dive !",
+      "description": "Explorez notre collection de matériel de plongée de haute qualité !",
+      "featuredItems": "Articles en vedette",
+      "browseGear": "Parcourir notre équipement"
+    }, 
+  
+    "gear": {
+      "title": "Notre collection d'équipements",
+      "maskSnorkel": "Ensemble masque et tuba",
+      "fullBodyWetsuit": "Combinaison intégrale de plongée",
+      "divingFins": "Palmes de plongée",
+      "diveComputer": "Ordinateur de plongée",
+      "oxygenTank": "Oxygen Tank",
+      "shortyWetsuit": "Combinaison courte",
+      "divingBoots": "Bottes de plongée",
+      "bcd": "Dispositif de contrôle de la flottabilité (BCD)",
+      "gearBag": "Sac d'équipement",
+      "underwaterCamera": "Appareil photo sous-marin",
+      "divingTorch": "Torche de plongée",
+      "regulatorSet": "Jeu de régulateur",
+
+      "descriptions": {
+        "maskSnorkel": "Ensemble masque et tuba de haute qualité pour une vision claire sous l'eau.",
+        "fullBodyWetsuit": "Combinaison de plongée durable et flexible offrant une protection complète du corps.",
+        "divingFins": "Palmes de plongée ergonomiques pour des mouvements efficaces dans l'eau.",
+        "diveComputer": "Ordinateur de plongée avancé pour suivre la profondeur, le temps et la décompression.",
+        "oxygenTank": "Bouteille d'oxygène fiable pour les explorations sous-marines prolongées.",
+        "shortyWetsuit": "Combinaison de plongée à manches courtes offrant confort et flexibilité.",
+        "divingBoots": "Chaussures de plongée en néoprène pour la chaleur et la protection.",
+        "bcd": "Dispositif essentiel de contrôle de la flottabilité pour une plongée en toute sécurité.",
+        "gearBag": "Sac de rangement spacieux pour stocker et transporter l'équipement de plongée.",
+        "underwaterCamera": "Appareil photo sous-marin haute résolution pour capturer la vie marine.",
+        "divingTorch": "Torche de plongée puissante pour une meilleure visibilité dans les eaux sombres.",
+        "regulatorSet": "Détendeur complet pour une respiration sûre et contrôlée."
+      }
+    },
+  
+    "about": {
+      "title": "A propos de Deep Dive",
+      "description": "Deep Dive est une boutique en ligne de matériel de plongée sous-marine construite pour présenter les tests automatisés de l'interface utilisateur et la prise en charge de la localisation. Le projet est construit avec React, React Router, i18next (pour la localisation) et Vite, et comprend un système de panier, un processus de paiement et l'authentification de l'utilisateur. Bien qu'il ne soit pas destiné à des transactions réelles, il sert de projet de portefeuille pour démontrer les compétences en matière d'automatisation des tests, de développement frontal et de tests de localisation."
+   
+    }
+  
+    
+  }
