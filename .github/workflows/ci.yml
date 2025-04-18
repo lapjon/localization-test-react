@@ -18,7 +18,6 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: Set up Node.js
-      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
@@ -27,19 +26,23 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Start the development server
+      # Step 4: Install wait-on
+      - name: Install wait-on
+        run: npm install wait-on
+
+      # Step 5: Start the development server in the background
       - name: Start development server
         run: npm run dev &  # Starts the server in the background
 
-      # Step 5: Wait for the server to be ready
+      # Step 6: Wait for the server to be ready
       - name: Wait for server to be ready
         run: |
-          sleep 10  # Adjust this if the server takes longer to start
+          npx wait-on http://localhost:5173  # Waits until the server is accessible
 
-      # Step 6: Install Playwright browsers
+      # Step 7: Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install
 
-      # Step 7: Run tests
+      # Step 8: Run tests
       - name: Run tests
         run: npm test  # This will run `npx playwright test`
