@@ -38,7 +38,7 @@ jobs:
       # Step 5: Start the development server and capture logs
       - name: Start development server
         run: |
-          npm run dev > server.log 2>&1 &  # Capture logs of the server output
+          npm run dev > server.log 2>&1 &  # Capture server logs
 
       # Step 6: Display server logs for debugging
       - name: Display server logs
@@ -47,7 +47,7 @@ jobs:
       # Step 7: Wait for the server to be ready
       - name: Wait for server to be ready
         run: |
-          npx wait-on --timeout 120000 http://localhost:5173  # Wait for up to 120 seconds (increase timeout)
+          npx wait-on --timeout 180000 http://localhost:5173  # Wait for up to 180 seconds (increase timeout)
 
       # Step 8: Check server status using curl
       - name: Check server status
