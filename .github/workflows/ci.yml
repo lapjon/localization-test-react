@@ -21,16 +21,39 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Adjust to your version of Node.js
+          node-version: '16'
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Install Playwright browsers
+      # Step 4: Start the development server in the background
+      - name: Start development server
+        run: npm run dev &  # Starts the server in the background
+
+      # Step 5: Wait for the server to be ready (Adjust this to your needs, if needed)
+      - name: Wait for server to be ready
+        run: |
+          sleep 10  # Waits for 10 seconds. You might need to adjust this if the server takes longer to start.
+
+      # Step 6: Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install
 
-      # Step 5: Run tests
+      # Step 7: Run tests
       - name: Run tests
         run: npm test  # This will run `npx playwright test`
+
+      # Step 8: Archive the test results into a compressed tarball or zip
+      - name: Archive test results
+        run: |
+          mkdir -p artifacts
+          mv path/to/your/test-results.xml artifacts/  # Move test results to an artifacts folder
+          tar -czf artifacts.tar.gz artifacts  # Create a compressed tarball of the artifacts
+
+      # Step 9: Upload the artifact (use v2 explicitly for upload-artifact)
+      - name: Upload test results artifact (v2)
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: artifacts.tar.gz  # Upload the tarball containing the results
