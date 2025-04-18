@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Adjust this to match your Node version
+          node-version: '16'
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -29,4 +29,11 @@ jobs:
 
       # Step 4: Run tests
       - name: Run tests
-        run: npm test  # Adjust this to match your test command, such as npx playwright test
+        run: npm test  # This will run `npx playwright test` or `npx cypress run`
+
+      # Step 5: Upload test results
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: path/to/your/test-results.xml  # Adjust to match where the test results are saved
