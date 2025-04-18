@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+
+  body {
+    background: url("/images/gear/background3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bolder;
+}
+
+/* Override background for About page */
+.about-container {
+    background: url("/images/gear/sea-turtle.jpg") no-repeat center center/cover !important;
+    height: 100vh;
+}
+
+/* Footer Styling */
+.footer {
+  position: relative; /* Ensures it stays at the bottom but moves with content */
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  background-color: rgba(69, 92, 186, 0.368); 
+  font-size: 14px;
+}
+
+/* Push footer to bottom if content is short */
+html, body {
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+.content-wrap {
+  flex: 1;
+}

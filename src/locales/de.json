@@ -1,0 +1,135 @@
+{
+    "checkout": {
+    "title": "Kasse",
+    "billingInformation": "Abrechnungsinformationen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "address": "Adresse",
+    "country": "Land",
+    "selectCountry": "Land auswählen",
+    "sweden": "Schweden",
+    "usa": "USA",
+    "germany": "Deutschland",
+    "city": "Stadt",
+    "postalCode": "Postleitzahl",
+    "paymentInformation": "Zahlungsinformationen",
+    "nameOnCard": "Name auf Karte",
+    "cardNumber": "Kartennummer",
+    "expiryDate": "Verfallsdatum",
+    "cvv": "CVV",
+    "placeOrder": "Bestellung aufgeben"
+    },
+  
+    "login": {
+      "title": "Anmelden",
+      "email": "E-Mail-Adresse",
+      "password": "Kennwort",
+      "button": "Anmelden", 
+      "notMember": "Kein Mitglied?",
+      "registerHere": "Registrieren Sie sich hier"
+    },
+  
+    "signup": {
+      "title": "Anmelden",
+      "E-Mail": "E-Mail Adresse",
+      "password": "Kennwort",
+      "confirmPassword": "Passwort bestätigen",
+      "button": "Registrieren",
+      "alreadyMember": "Schon Mitglied?",
+      "loginHere": "Hier anmelden"
+    }, 
+    
+    "errors": {
+      "emailRequired": "E-Mail ist erforderlich.",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "passwordRequired": "Passwort ist erforderlich.",
+      "passwordValidation": "Das Passwort muss mindestens 8 Zeichen lang sein und mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten.",
+      "passwordMismatch": "Passwörter stimmen nicht überein.",
+      "firstNameRequired": "Vorname ist erforderlich.",
+      "lastNameRequired": "Nachname ist erforderlich.",
+      "addressRequired": "Adresse ist erforderlich.",
+      "countryRequired": "Bitte wählen Sie ein Land aus.",
+      "cityRequired": "Stadt ist erforderlich.",
+      "invalidPostalCode": "Postleitzahl muss 5-stellig sein.",
+      "cardNameRequired": "Name auf der Karte ist erforderlich.",
+      "invalidCardNumber": "Kartennummer muss 16-stellig sein.",
+      "expiryDateRequired": "Verfallsdatum ist erforderlich.",
+      "expiryDatePast": "Das Verfallsdatum darf nicht in der Vergangenheit liegen.",
+      "invalidCvv": "CVV muss 3-stellig sein.",
+      "allFieldsRequired": "Alle Felder sind erforderlich.",
+      "invalidCredentials": "Ungültige E-Mail oder ungültiges Passwort.",
+      "weakPassword": "Das Passwort muss mindestens 8 Zeichen lang sein und einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten."
+    }, 
+    "placeOrderSuccess": "Ihre Bestellung wurde erfolgreich aufgegeben!",
+  
+    "navbar": {
+      "loggedInAs": "Eingeloggt als",
+      "gear": "Getriebe",
+      "cart": "Warenkorb",
+      "about": "Über",
+      "login": "Anmelden",
+      "logout": "Abmelden"
+    },
+  
+    "cart": {
+      "confirmRemove": "Sind Sie sicher, dass Sie {{Item}} aus Ihrem Warenkorb entfernen möchten?",
+      "title": "Ihr Warenkorb",
+      "empty": "Ihr Warenkorb ist leer.",
+      "added": "wurde zu Ihrem Warenkorb hinzugefügt!",
+      "quantityIncreased": "Menge erhöht!",
+      "addToCart": "In den Warenkorb",
+      "proceedToCheckout": "Zur Kasse gehen",
+      "remove": "Aus dem Warenkorb entfernen",
+      "clear": "Warenkorb löschen",
+      "totalAmount": "Gesamtsumme"
+      
+    },
+    
+    "welcome": {
+      "title": "Willkommen bei Deep Dive!",
+      "description": "Entdecken Sie unsere hochwertige Tauchausrüstungskollektion!",
+      "featuredItems": "Ausgewählte Artikel",
+      "browseGear": "Durchsuchen Sie unsere Ausrüstung"
+    }, 
+  
+    "gear": {
+      "title": "Unsere Ausrüstungskollektion",
+      "maskSnorkel": "Maske & Schnorchel-Set",
+      "fullBodyWetsuit": "Ganzkörpernebelanzug",
+      "divingFins": "Tauchflossen",
+      "diveComputer": "Tauchcomputer",
+      "oxygenTank": "Sauerstofftank",
+      "shortyWetsuit": "Kurzer Neoprenanzug",
+      "divingBoots": "Tauchstiefel",
+      "bcd": "Tarierweste",
+      "gearBag": "Ausrüstungstasche",
+      "underwaterCamera": "Unterwasserkamera",
+      "divingTorch": "Taucherlampe",
+      "regulatorSet": "Atemregler",
+
+      "descriptions": {
+        "maskSnorkel": "Hochwertiges Masken- und Schnorchelset für klare Sicht unter Wasser",
+        "fullBodyWetsuit": "Strapazierfähiger und flexibler Neoprenanzug, der den ganzen Körper schützt.",
+        "divingFins": "Ergonomische Tauchflossen für effiziente Bewegung im Wasser.",
+        "diveComputer": "Fortschrittlicher Tauchcomputer zur Überwachung von Tiefe, Zeit und Dekompression.",
+        "oxygenTank": "Zuverlässige Sauerstoffflasche für ausgedehnte Unterwassererkundungen.",
+        "shortyWetsuit": "Kurzärmeliger Neoprenanzug für Komfort und Flexibilität.",
+        "divingBoots": "Neopren-Tauchschuhe für Wärme und Schutz.",
+        "bcd": "Unverzichtbare Tarierweste für sicheres Tauchen.",
+        "gearBag": "Geräumige Ausrüstungstasche zur Aufbewahrung und zum Transport der Tauchausrüstung.",
+        "underwaterCamera": "Hochauflösende Unterwasserkamera, um die Unterwasserwelt zu fotografieren.",
+        "divingTorch": "Leistungsstarke Taucherlampe für Sichtbarkeit in dunklen Gewässern.",
+        "regulatorSet": "Komplettes Atemreglerset für sicheres und kontrolliertes Atmen."
+      }
+    },
+  
+    "about": {
+      "title": "Über Deep Dive",
+      "description": "Deep Dive ist ein Webshop für Tauchausrüstung, der als Beispiel für automatisierte UI-Tests und Lokalisierungsunterstützung dient. Das Projekt wurde mit React, React Router, i18next (für die Lokalisierung) und Vite erstellt und enthält ein Warenkorbsystem, einen Checkout-Prozess und eine Benutzerauthentifizierung. Obwohl es nicht für echte Transaktionen gedacht ist, dient es als Portfolioprojekt, um Fähigkeiten in der Testautomatisierung, Frontend-Entwicklung und Lokalisierungstests zu demonstrieren."
+   
+    }
+  
+    
+  }
+  

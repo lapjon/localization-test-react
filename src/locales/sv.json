@@ -1,0 +1,122 @@
+{
+    "checkout": {
+        "title": "Kassa",
+        "billingInformation": "Faktueringsinformation",
+        "firstName": "Förnamn",
+        "lastName": "Efternamn",
+        "email": "E-post",
+        "address": "Adress",
+        "country": "Land",
+        "selectCountry": "Välj land",
+        "sweden": "Sverige",
+        "usa": "USA",
+        "germany": "Tyskland",
+        "city": "Stad",
+        "postalCode": "Postnummer",
+        "paymentInformation": "Betalningsinformation",
+        "nameOnCard": "Kortnamn",
+        "cardNumber": "Kortnummer",
+        "expiryDate": "Utgångsdatum",
+        "cvv": "CVV",
+        "placeOrder": "Lägg till beställning"
+    },
+    "login": {
+        "title": "Logga in",
+        "email": "E-postadress",
+        "password": "Lösenord",
+        "button": "Logga in",
+        "notMember": "Inte medlem?",
+        "registerHere": "Registrera dig här"
+    },
+    "signup": {
+        "title": "Registrera",
+        "email": "E-postadress",
+        "password": "Lösenord",
+        "confirmPassword": "Bekräfta lösenord",
+        "button": "Registrera",
+        "alreadyMember": "Redan medlem?",
+        "loginHere": "Logga in här"
+    },
+    "errors": {
+        "emailRequired": "E-post måste anges.",
+        "invalidEmail": "Vänligen ange en giltig e-postadress.",
+        "passwordRequired": "Lösenord krävs.",
+        "passwordValidation": "Lösenordet måste vara minst 8 tecken långt och innehålla minst en stork bokstav, en liten bokstav och en siffra.",
+        "passwordMismatch": "Lösenorden matchar inte.",
+        "firstNameRequired": "Förnamn måste anges.",
+        "lastNameRequired": "Efternamn måste anges.",
+        "addressRequired": "Adress måste anges.",
+        "countryRequired": "Vänligen välj ett land.",
+        "cityRequired": "Stad måste anges.",
+        "invalidPostalCode": "Postnumret måste vara 5 siffror.",
+        "cardNameRequired": "Namn på kortet måste anges.",
+        "invalidCardNumber": "Kortnumret måste vara 16 siffror.",
+        "expiryDateRequired": "Utgångsdatum krävs.",
+        "expiryDatePast": "Utgångsdatumet kan inte vara i det förflutna.",
+        "invalidCvv": "CVV måste vara 3 siffror.",
+        "allFieldsRequired": "Alla fält är obligatoriska.",
+        "invalidCredentials": "Ogiltig e-postadress eller lösenord.",
+        "weakPassword": "Lösenordet måste vara minst 8 tecken långt och innehålla en stor bokstav, en liten bokstav, en siffra och ett specialtecken."
+    },
+    "placeOrderSuccess": "Din beställning lyckades!",
+    "navbar": {
+        "loggedInAs": "Inloggad som",
+        "gear": "Utrustning",
+        "cart": "Varukorg",
+        "about": "Om",
+        "login": "Logga in",
+        "logout": "Logga ut"
+    },
+    "cart": {
+        "confirmRemove": "Är du säker på att du vill ta bort {{item}} från din varukorg?",
+        "title": "Din varukorg",
+        "empty": "Din varukorg är tom.",
+        "added": "har lagts till i din varukorg!",
+        "quantityIncreased": "har ökat i kvantitet!",
+        "addToCart": "Lägg till i varukorgen",
+        "proceedToCheckout": "Fortsätt till kassan",
+        "remove": "Ta bort från varukorgen",
+        "clear": "Töm varukorg",
+        "totalAmount": "Totalt belopp"
+    },
+    "welcome": {
+        "title": "Välkommen till Deep Dive!",
+        "description": "Utforska vår samling av högkvalitativ dykutrustning!",
+        "featuredItems": "Utvalda artiklar",
+        "browseGear": "Bläddra i vår katalog"
+    },
+    "gear": {
+        "title": "Vår utrustning",
+        "maskSnorkel": "Mask och snorkel",
+        "fullBodyWetsuit": "Våtdräkt",
+        "divingFins": "Simfenor",
+        "diveComputer": "Dykdator",
+        "oxygenTank": "Syrgastank",
+        "shortyWetsuit": "Kort våtdräkt",
+        "divingBoots": "Dykstövlar",
+        "bcd": "Flytkompensator (BCD)",
+        "gearBag": "Väska",
+        "underwaterCamera": "Undervattenskamera",
+        "divingTorch": "Dyklampa",
+        "regulatorSet": "Regulatorset",
+
+        "descriptions": {
+            "maskSnorkel": "Mask- och snorkelset av hög kvalitet för klar sikt under vattnet.",
+            "fullBodyWetsuit": "Slitstark och flexibel våtdräkt som ger skydd för hela kroppen.",
+            "divingFins": "Ergonomiska dykfenor för effektiv rörelse i vattnet.",
+            "diveComputer": "Avancerad dykdator som håller koll på djup, tid och dekompression.",
+            "oxygenTank": "Tillförlitlig syrgastank för längre utflykter under vattnet.",
+            "shortyWetsuit": "Kortärmad våtdräkt som ger komfort och flexibilitet.",
+            "divingBoots": "Dykstövlar i neopren för värme och skydd.",
+            "bcd": "Viktigt flytvästsystem för säker dykning.",
+            "gearBag": "Rymlig väska för att förvara dykutrustning.",
+            "underwaterCamera": "Högupplöst undervattenskamera för att fånga marint liv.",
+            "divingTorch": "Kraftfull dyklampa för synlighet i mörka vatten.",
+            "regulatorSet": "Komplett regulatorset för säker och kontrollerad andning."
+          }
+    },
+    "about": {
+        "title": "Om Deep Dive",
+        "description": "Deep Dive är en webbutik för dykutrustning byggd för att visa upp automatiserad UI-testning och lokaliseringsstöd. Projektet är byggt med React, React Router, i18next (för lokalisering) och Vite, och inkluderar ett kundvagnssystem, en utcheckningsprocess och användarautentisering. Även om det inte är avsett för riktiga transaktioner, fungerar det som ett portföljprojekt för att demonstrera färdigheter i testautomatisering, frontendutveckling och lokaliseringstestning."
+    }
+}

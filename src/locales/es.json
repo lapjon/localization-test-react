@@ -1,0 +1,137 @@
+{
+    "checkout": {
+    "title": "Pedido",
+    "billingInformation": "Información de facturación",
+    "firstName": "Nombre de pila",
+    "lastName": "Apellido",
+    "email": "Email",
+    "address": "Dirección",
+    "country": "País",
+    "selectCountry": "Seleccionar país",
+    "sweden": "Suecia",
+    "usa": "USA",
+    "germany": "Alemania",
+    "city": "Ciudad",
+    "postalCode": "Código Postal",
+    "paymentInformation": "Información de pago",
+    "nameOnCard": "Nombre en la tarjeta",
+    "cardNumber": "Número de tarjeta",
+    "expiryDate": "Fecha de caducidad",
+    "cvv": "CVV",
+    "placeOrder": "Realizar un pedido"
+
+    },
+  
+    "login": {
+      "title": "Acceso",
+      "email": "Dirección de correo electrónico",
+      "password": "Contraseña",
+      "button": "Iniciar sesión", 
+      "notMember": "¿No eres miembro?",
+      "registerHere": "Regístrese aquí"
+    },
+  
+    "signup": {
+      "title": "Regístrate",
+      "email": "Dirección de correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña",
+      "button": "Registro",
+      "alreadyMember": "¿Ya eres miembro?",
+      "loginHere": "Iniciar sesión aquí"
+    }, 
+    
+    "errors": {
+      "emailRequired": "El correo electrónico es obligatorio.",
+      "invalidEmail": "Por favor, introduzca una dirección de correo electrónico válida.",
+      "passwordRequired": "Se requiere contraseña.",
+      "passwordValidation": "La contraseña debe tener al menos 8 caracteres y contener al menos una letra mayúscula, una letra minúscula y un número.",
+      "passwordMismatch": "Las contraseñas no coinciden.",
+      "firstNameRequired": "El nombre es obligatorio.",
+      "lastNameRequired": "Apellidos obligatorios.",
+      "addressRequired": "Se requiere la dirección.",
+      "countryRequired": "Por favor, seleccione un país.",
+      "cityRequired": "Se requiere la ciudad.",
+      "invalidPostalCode": "El código postal debe tener 5 dígitos.",
+      "cardNameRequired": "Se requiere el nombre en la tarjeta.",
+      "invalidCardNumber": "El número de tarjeta debe tener 16 dígitos.",
+      "expiryDateRequired": "Se requiere fecha de caducidad.",
+      "expiryDatePast": "La fecha de caducidad no puede ser pasada.",
+      "invalidCvv": "El CVV debe tener 3 dígitos.",
+      "allFieldsRequired": "Todos los campos son obligatorios.",
+      "invalidCredentials": "Email o contraseña inválidos.",
+      "weakPassword": "La contraseña debe tener al menos 8 caracteres e incluir una letra mayúscula, una letra minúscula, un número y un carácter especial."
+    }, 
+    "placeOrderSuccess": "¡Tu pedido se ha realizado correctamente!",
+  
+    "navbar": {
+      "loggedInAs": "Conectado como",
+      "gear": "Equipo",
+      "cart": "Carrito",
+      "about": "Acerca de",
+      "login": "Acceso",
+      "logout": "Salir"
+    },
+  
+    "cart": {
+      "confirmRemove": "¿Estás seguro de que quieres eliminar {{item}} de tu Carrito?",
+      "title": "Tu Cesta",
+      "empty": "Tu carrito está vacío",
+      "added": "¡ha sido añadido a tu carrito!",
+      "quantityIncreased": "¡cantidad aumentada!",
+      "addToCart": "Añadir al carrito",
+      "proceedToCheckout": "Pasar por caja",
+      "remove": "Quitar del carrito",
+      "clear": "Carro vacío",
+      "totalAmount": "Importe total"
+      
+    },
+    
+    "welcome": {
+      "title": "¡Bienvenido a Deep Dive!",
+      "description": "¡Explora nuestra colección de equipos de buceo de alta calidad!",
+      "featuredItems": "Productos destacados",
+      "browseGear": "Explora nuestro equipo"
+    }, 
+  
+    "gear": {
+      "title": "Nuestra colección de engranajes",
+      "maskSnorkel": "Conjunto de máscara y tubo",
+      "fullBodyWetsuit": "Traje de neopreno de cuerpo entero",
+      "divingFins": "Aletas de buceo",
+      "diveComputer": "Ordenador de buceo",
+      "oxygenTank": "Tanque de oxígeno",
+      "shortyWetsuit": "Traje de neopreno corto",
+      "divingBoots": "Botas de inmersión",
+      "bcd": "Dispositivo de control de la flotabilidad (BCD)",
+      "gearBag": "Bolsa de equipo",
+      "underwaterCamera": "Cámara subacuática",
+      "divingTorch": "Antorcha de buceo",
+      "regulatorSet": "Kit regulador",
+
+      "descriptions": {
+        "maskSnorkel": "Conjunto de máscara y tubo de alta calidad para una visión nítida bajo el agua.",
+        "fullBodyWetsuit": "Traje de neopreno duradero y flexible que protege todo el cuerpo.",
+        "divingFins": "Aletas de buceo ergonómicas para un movimiento eficiente en el agua.",
+        "diveComputer": "Ordenador de buceo avanzado para controlar la profundidad, el tiempo y la descompresión.",
+        "oxygenTank": "Botella de oxígeno fiable para exploraciones submarinas prolongadas.",
+        "shortyWetsuit": "Traje de neopreno de manga corta que ofrece comodidad y flexibilidad.",
+        "divingBoots": "Botas de buceo de neopreno para calidez y protección.",
+        "bcd": "Dispositivo de control de flotabilidad esencial para bucear con seguridad.",
+        "gearBag": "Amplia bolsa para guardar y transportar el equipo de buceo.",
+        "underwaterCamera": "Cámara subacuática de alta resolución para capturar la vida marina.",
+        "divingTorch": "Potente linterna de buceo para visibilidad en aguas oscuras.",
+        "regulatorSet": "Juego completo de regulador para una respiración segura y controlada."
+      }
+    },
+  
+    "about": {
+      "title": "Acerca de Deep Dive",
+      "description": "Deep Dive es una tienda web de equipos de buceo construida para mostrar pruebas de interfaz de usuario automatizadas y soporte de localización. El proyecto está construido con React, React Router, i18next (para la localización) y Vite, e incluye un sistema de carrito de la compra, un proceso de pago y autenticación de usuario. Si bien no está destinado a transacciones reales, sirve como un proyecto de cartera para demostrar habilidades en automatización de pruebas, desarrollo frontend y pruebas de localización."
+   
+    }
+  
+    
+  }
+  
+  

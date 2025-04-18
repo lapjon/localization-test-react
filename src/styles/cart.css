@@ -1,0 +1,115 @@
+.cart-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #274fde;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .cart-item-price {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  
+  .remove-button:hover {
+    background-color: #d43f3f;
+  }
+  
+  .cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .clear-cart,
+  .proceed-checkout {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .clear-cart {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .clear-cart:hover {
+    background-color: #bbb;
+  }
+  
+  .proceed-checkout {
+    background-color: #274fde;
+    color: white;
+  }
+  
+  .proceed-checkout:hover {
+    background-color: #1a3ab0;
+  }
+
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.cart-content {
+    flex-grow: 1; /* Pushes the footer down */
+}
+
+  footer {
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+}
+  
