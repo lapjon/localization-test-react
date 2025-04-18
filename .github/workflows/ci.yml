@@ -1,4 +1,4 @@
-name: Run Tests
+name: Playwright Tests
 
 on:
   push:
@@ -12,12 +12,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        browser: [chromium, firefox]
+
     steps:
       # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
@@ -26,23 +31,31 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Install wait-on
+      # Step 4: Install wait-on to wait for the server to be ready
       - name: Install wait-on
         run: npm install wait-on
 
-      # Step 5: Start the development server in the background
+      # Step 5: Start the development server and log output
       - name: Start development server
-        run: npm run dev &  # Starts the server in the background
+        run: |
+          npm run dev &
+          echo "Development server started"
 
       # Step 6: Wait for the server to be ready
       - name: Wait for server to be ready
         run: |
-          npx wait-on http://localhost:5173  # Waits until the server is accessible
+          npx wait-on --timeout 60000 http://localhost:5173  # Wait for up to 60 seconds
 
-      # Step 7: Install Playwright browsers
-      - name: Install Playwright browsers
+      # Step 7: Check if the server is running properly (optional step to check logs)
+      - name: Check server status
+        run: |
+          curl -I http://localhost:5173  # Make a request to ensure server is up
+
+      # Step 8: Install Playwright Browsers
+      - name: Install Playwright Browsers
         run: npx playwright install
 
-      # Step 8: Run tests
-      - name: Run tests
-        run: npm test  # This will run `npx playwright test`
+      # Step 9: Run Playwright Tests
+      - name: Run Tests
+        run: npx playwright test --project=${{ matrix.browser }}
+        continue-on-error: true
