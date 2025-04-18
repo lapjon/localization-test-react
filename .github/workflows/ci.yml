@@ -39,6 +39,7 @@ jobs:
       - name: Start development server
         run: |
           npm run dev > server.log 2>&1 &  # Capture server logs
+          tail -f server.log  # Continuously show server log
 
       # Step 6: Display server logs for debugging
       - name: Display server logs
