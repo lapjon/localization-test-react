@@ -38,9 +38,9 @@ jobs:
           mv path/to/your/test-results.xml artifacts/  # Move test results to an artifacts folder
           tar -czf artifacts.tar.gz artifacts  # Create a compressed tarball of the artifacts
 
-      # Step 6: Manually upload the archived test results
-      - name: Upload test results artifact manually
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: artifacts.tar.gz  # Upload the tarball containing the results
+      # Step 6: COMMENT OUT UPLOAD ARTIFACT FOR NOW (TEMPORARY FIX)
+      # - name: Upload test results artifact (v2)
+      #   uses: actions/upload-artifact@v2  # Use v2 explicitly for upload-artifact
+      #   with:
+      #     name: test-results
+      #     path: artifacts.tar.gz  # Upload the tarball containing the results
