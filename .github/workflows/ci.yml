@@ -35,27 +35,30 @@ jobs:
       - name: Install wait-on
         run: npm install wait-on
 
-      # Step 5: Start the development server and log output
+      # Step 5: Start the development server and capture logs
       - name: Start development server
         run: |
-          npm run dev &
-          echo "Development server started"
+          npm run dev > server.log 2>&1 &  # Capture logs of the server output
 
-      # Step 6: Wait for the server to be ready
+      # Step 6: Display server logs for debugging
+      - name: Display server logs
+        run: cat server.log  # Output server logs to GitHub Actions for debugging
+
+      # Step 7: Wait for the server to be ready
       - name: Wait for server to be ready
         run: |
-          npx wait-on --timeout 60000 http://localhost:5173  # Wait for up to 60 seconds
+          npx wait-on --timeout 120000 http://localhost:5173  # Wait for up to 120 seconds (increase timeout)
 
-      # Step 7: Check if the server is running properly (optional step to check logs)
+      # Step 8: Check server status using curl
       - name: Check server status
         run: |
-          curl -I http://localhost:5173  # Make a request to ensure server is up
+          curl -I http://localhost:5173  # Check if the server is responding
 
-      # Step 8: Install Playwright Browsers
+      # Step 9: Install Playwright Browsers
       - name: Install Playwright Browsers
         run: npx playwright install
 
-      # Step 9: Run Playwright Tests
+      # Step 10: Run Playwright Tests
       - name: Run Tests
         run: npx playwright test --project=${{ matrix.browser }}
         continue-on-error: true
